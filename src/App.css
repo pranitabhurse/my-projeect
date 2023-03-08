@@ -1,23 +1,144 @@
 @font-face {
-  font-family: SourceSansPro-SemiBold;
-  src: url("assets/fonts/SourceSansPro-SemiBold.ttf");
+  font-family: Livvic-SemiBold;
+  src: url("assets/fonts/Livvic-SemiBold.ttf");
 }
 @font-face {
-  font-family: SourceSansPro-Light;
-  src: url("assets/fonts/SourceSansPro-Light.ttf");
+  font-family: Livvic-Light;
+  src: url("assets/fonts/Livvic-Light.ttf");
 }
 @font-face {
-  font-family: SourceSansPro-Bold;
-  src: url("assets/fonts/SourceSansPro-Bold.ttf");
+  font-family: Livvic-Bold;
+  src: url("assets/fonts/Livvic-Bold.ttf");
 }
 @font-face {
-  font-family: SourceSansPro-Regular;
-  src: url("assets/fonts/SourceSansPro-Regular.ttf");
+  font-family: Livvic-Regular;
+  src: url("assets/fonts/Livvic-Regular.ttf");
 }
 .banner img 
 {
   width:100%;
 }
+.top-info 
+{
+  background-color: #14b1bb;
+  height: 29px;
+}
+.top-info .link-info .material-symbols-outlined 
+{
+  font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 3px;
+}
+.top-info .link-info .top-name 
+{
+  color: #fff;
+    font-size: 13px;
+    margin-left: 26px;
+}
+.top-info .top-social 
+{
+  float:right;
+}
+.top-info .top-social .list-group-item 
+{
+  background-color: transparent;
+    border: none;
+    padding: 3px 5px 3px 5px;
+}
+.top-info .top-social .list-group-item i 
+{
+  color: #fff;
+}
+.navbar-options button
+{
+  border:1px solid #14b1bb;
+}
+.navbar-options button:hover ,.navbar-options .btn-check:checked+.btn, .navbar-options .btn.active, .btn.show, .navbar-options .btn:first-child:active, .navbar-options :not(.btn-check)+.btn:active
+{
+  background-color: #14b1bb;
+  border:1px solid #14b1bb;
+}
+.top-bar .navbar-toggler:focus
+{
+  box-shadow:none;
+}
+.slider-banner .carousel-inner
+{
+  height:500px !important;
+}
+.slider-banner .carousel-caption
+{
+  position: absolute;
+    right: unset;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: left;
+    top: 13%;
+    width: 500px;
+} 
+.slider-banner .carousel-caption h3 
+{
+  color: #fff;
+  font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 45px;
+    font-family: Livvic-Bold;
+    background: -webkit-linear-gradient(251deg , #14b1bb, #07464a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.slider-banner .carousel-caption p 
+{
+  color: #000;
+    font-size: 26px;
+    margin-top: 11px;
+    font-family: Livvic-Light;
+    line-height: 38px;
+}
+.slider-banner .carousel-caption button.example-1 
+{
+  padding: 8px 9px 8px 9px;
+    text-transform: uppercase;
+    font-size: 12px;
+    box-shadow: none;
+    margin-right: -23px;
+    font-family: Livvic-SemiBold;
+    margin-top: 0px;
+    background-color: #14b1bb;
+    color: #fff;
+    width: 168px;
+    border: 1px solid #148d95;
+    border-radius: 25px;
+}
+.slider-banner .carousel-caption button.api 
+{
+  background-image: linear-gradient(45deg, transparent, transparent);
+  border: 1px solid #000000;
+  box-shadow: none;
+  font-size:12px;
+  text-transform: uppercase;
+  font-family: Livvic-SemiBold;
+  color: #000000;
+  padding: 8px 9px 8px 9px;
+  background-color: transparent;
+  width: 132px;
+    margin-right: 30px;
+  border-radius: 25px;
+}
+.slider-banner .carousel-indicators 
+{
+  justify-content: left;
+}
+.slider-banner .carousel-dark .carousel-indicators [data-bs-target]
+{
+  background-color: #278b84;
+}
+.slider-banner img { width:100%;}
 .wrapper .rupee {
   height: 55px;
     width: 55px;
@@ -32,23 +153,12 @@
 @keyframes shadow-pulse
 {
   0% {
-    box-shadow: 0 0 0 0px rgba(5, 170, 170, 0.2);
+    box-shadow: 0 0 0 0px rgba(5, 170, 170, 0.445);
   }
   100% {
     box-shadow: 0 0 0 35px rgba(5, 145, 163, 0);
   }
 }
-
-@keyframes shadow-pulse-big
-{
-  0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
-  }
-  100% {
-    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
-  }
-}
-
 .example-1
 {
   font: 13px/130px 'Barlow Semi Condensed', sans-serif;
@@ -122,7 +232,7 @@ div.rupee .dot {
 {
   color: #000000;
   border-bottom: 1px solid transparent;
-  font-family: SourceSansPro-SemiBold;
+  font-family: Livvic-SemiBold;
   font-size: 16px;
   margin-left: 5px;
   margin-right: 5px;
@@ -136,24 +246,25 @@ div.rupee .dot {
 .top-bar button 
 {
   padding: 4px 20px 4px 20px;
-    border: 1px solid #3da081;
+    border: 1px solid #14b1bb;
     height: max-content;
     border-radius: 22px;
     margin-right: 4px;
     color: #000;
-    font-family: SourceSansPro-SemiBold;
+    font-family: Livvic-SemiBold;
     background-color: transparent;
     font-size: 13px;
     margin-top: 4px;
 }
 .top-bar button:hover 
 {
-  background-color: #278b84;
+  background-color: #14b1bb;
 }
 .top-bar nav 
 {
-  background-image: radial-gradient( #e8f0f3, #e6edf3);
-  box-shadow: 0px 3px 10px #63757e;
+  background-color: #fff;
+  height: 80px;
+  border-bottom: 5px solid #14b1bb;
 }
 .banner 
 {
@@ -175,52 +286,6 @@ div.rupee .dot {
     transform: translateX(0);
   }
 }
-
-.banner-content h3 
-{
-  color: #fff;
-    font-size: 49px;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    line-height: 55px;
-    font-family: SourceSansPro-Bold;
-    background: -webkit-linear-gradient(251deg , #1a1e68, #16638b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.banner-content p 
-{
-  color: #000;
-  font-size: 43px;
-  margin-top: 20px;
-  font-family: SourceSansPro-Light;
-  line-height: 45px;
-}
-.banner-content button 
-{
-  padding: 11px 13px 11px 13px;
-    text-transform: uppercase;
-    font-size: 14px;
-    box-shadow: none;
-    margin-right: -23px;
-    font-family: SourceSansPro-SemiBold;
-    margin-top: 24px;
-    background-color: #278b84;
-    color: #fff;
-    width: 168px;
-}
-.banner-content button.api 
-{
-  background-image: linear-gradient(45deg, transparent, transparent);
-  border: 1px solid #000000;
-  box-shadow: none;
-  font-family: SourceSansPro-SemiBold;
-  color: #000000;
-  padding: 10px 19px 10px 18px;
-  background-color: transparent;
-  width: 168px;
-  margin-right: 10px;
-}
 .banner-image 
 {
   text-align: center;
@@ -240,10 +305,117 @@ div.rupee .dot {
   0% { transform: translateY(0); }
   100% { transform: translateY(-10px); }
 }
+/*-------------------about --------------------*/
+.about-us 
+{
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.about-us .about-card 
+{
+  background-image: linear-gradient(45deg, #129fa8, transparent);
+    padding: 20px;
+}
+.about-us .about-card h4 
+{
+  font-family: Livvic-SemiBold;
+  font-size: 19px;
+  margin-top: 15px;
+  margin-bottom: 14px;
+}
+.about-us .about-card p 
+{
+  font-family: Livvic-Light;
+}
+.about-us .about1 
+{
+  margin-top: 40%;
+}
+.about-content h1 
+{
+  font-family: Livvic-Bold;
+  font-size: 30px;
+    color: #10929b;
+}
+.about-heading h3 
+{
+  font-family: Livvic-Bold;
+  padding-bottom: 30px;
+}
+.about-us .flip-card {
+  background-color: transparent;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.about-us .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.about-us .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.about-us .flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.about-us .flip-card-front {
+  color: black;
+}
+
+.about-us .flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+.about-content 
+{
+  margin-top: 70px;
+}
+.about-content h3 
+{
+  font-family: Livvic-SemiBold;
+  font-size: 15px;
+}
+.about-content p 
+{
+  font-family: Livvic-Regular;
+  font-size: 13px;
+}
+.about-us .flip-card-front .material-symbols-outlined
+{
+  font-size: 32px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 7px 5px 3px 8px;
+    width: 50px;
+    height: 50px;
+}
+.about-us .flip-card-back .material-symbols-outlined
+{
+  font-size: 32px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    padding: 7px 5px 3px 8px;
+    width: 50px;
+    height: 50px;
+}
+/*-----------------------------about-style end -----------------------*/
 .why-choose 
 {
   padding-top: 20px;
   background-image: url("assets/images/page-bg-1.jpg");
+  padding-bottom:20px;
 }
 .choose-heading 
 {
@@ -252,7 +424,7 @@ div.rupee .dot {
 .choose-heading h3 
 {
   border-bottom: 3px solid;
-  font-family: SourceSansPro-SemiBold;
+  font-family: Livvic-SemiBold;
   display: inline-block;
   border-image: linear-gradient(to right, #3e9f7f, #a6870f) 1;
   padding-bottom: 13px;
@@ -275,7 +447,7 @@ div.rupee .dot {
   background: -webkit-linear-gradient(251deg , #a58810, #3d9f80);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: SourceSansPro-Bold;
+  font-family: Livvic-Bold;
 }
 .choose-block 
 {
@@ -294,7 +466,7 @@ div.rupee .dot {
     text-transform: capitalize;
     color: #6c5a09;
     margin-bottom: 10px;
-    font-family: SourceSansPro-Bold;
+    font-family: Livvic-Bold;
 }
 .choose-block p 
 {
@@ -324,7 +496,8 @@ div.rupee .dot {
 .api 
 {
   padding-top: 50px;
-  padding-bottom: 29px;
+    padding-bottom: 29px;
+    background-color: #d9f2f466;
 }
 .api-doc
 {
@@ -338,7 +511,7 @@ div.rupee .dot {
 .api .api-doc h3 
 {
   border-bottom: 3px solid;
-    font-family: SourceSansPro-SemiBold;
+    font-family: Livvic-SemiBold;
     display: inline-block;
     border-image: linear-gradient(to right, #3e9f7f, #a6870f) 1;
     padding-bottom: 13px;
@@ -354,7 +527,7 @@ div.rupee .dot {
   word-spacing: 4px;
   letter-spacing: 0px;
   line-height: 26px;
-  font-family: SourceSansPro-Regular;
+  font-family: Livvic-Regular;
   margin-top: 20px;
 }
 .api-doc-link a 
@@ -362,7 +535,7 @@ div.rupee .dot {
   font-size: 17px;
   text-decoration: none;
   color: #36856a;
-  font-family: SourceSansPro-SemiBold;
+  font-family: Livvic-SemiBold;
 }
 .api-code 
 {
@@ -380,20 +553,17 @@ div.rupee .dot {
 }
 .services
 {
-  background-image: url("assets/images/services-bg.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-color: #14b1bb29;
 }
 .services-heading h3 
 {
-  color: #fff;
+  color: #000;
   margin-top: 20px;
-  font-family: SourceSansPro-Bold;
+  font-family: Livvic-Bold;
   font-size: 26px;
 }
 .services-content 
 {
-  background-color: #74b18b66;
   padding: 12px;
   border-radius: 11px;
   margin-bottom: 20px;
@@ -403,7 +573,7 @@ div.rupee .dot {
 {
   font-size: 17px;
   color: #000;
-  font-family: SourceSansPro-SemiBold;
+  font-family: Livvic-SemiBold;
   margin-top: 9px;
   margin-bottom: 7px;
 }
@@ -416,9 +586,39 @@ div.rupee .dot {
   background-color: #ffffff96;
   border-radius: 30px;
   margin-bottom: 25px;
-  font-family: SourceSansPro-Regular;
+  font-family: Livvic-Regular;
   padding: 10px 10px 10px 19px;
 }
+.services .services-images img 
+{
+  width: 100%;
+  margin-top: 80px;
+}
+/*--------------------------- Transfer -------------------------------*/
+.transfer 
+{
+  padding-bottom: 40px;
+}
+  .transfer-img img 
+  {
+    width: 100%;
+  }
+  .transfer-content 
+  {
+    margin-top: 80px;
+  }
+  .transfer-content h3 
+  {
+    font-family: Livvic-Bold;
+  font-size: 26px;
+  }
+  .transfer-content p
+  {
+    font-family: Livvic-Regular;
+    font-size: 22px;
+    margin-top: 43px;
+  }
+/*-------------------------------Transfer end ---------------------------*/
 .process-steps 
 {
   background-image: url("assets/images/steps-bg.png");
@@ -438,44 +638,34 @@ div.rupee .dot {
 }
 .process-steps .process-heading h3 
 {
-  font-family: SourceSansPro-SemiBold;
+  font-family: Livvic-SemiBold;
   font-size: 25px;
 }
 .process-heading p 
 {
   font-size: 13px;
-  font-family: SourceSansPro-Regular;
+  font-family: Livvic-Regular;
 }
 .process-steps-content 
 {
-  margin-top: 70px;
+  margin-top: 10px;
 }
 .process-steps-content h3 
 {
   font-size: 24px;
   color: #338569;
-  font-family: SourceSansPro-SemiBold;
-  margin-top: 40px;
+  font-family: Livvic-SemiBold;
+  margin-top: 28px;
 }
 .process-steps-content p 
 {
-  font-size: 20px;
-  font-family: SourceSansPro-Regular;
+  font-size: 17px;
+  font-family: Livvic-Regular;
 }
-.process-image img 
+.process-slider
 {
-  width:80%;
-  /* animation: 1s ease-out 0s 1 slideInRight; */
+  height: 510px;
 }
-/* @keyframes slideInRight {
-  100% {
-    transform: translateX(0);
-  }
-  0% {
-    transform: translateX(200%);
-  }
-  
-} */
 .faq 
 {
   background-image: url("assets/images/faq-bg.png");
@@ -492,12 +682,10 @@ div.rupee .dot {
 .faq-heading h3 ,.contact-us .contact-heading h3
 {
   padding-bottom: 40px;
-  font-family: SourceSansPro-SemiBold;
+  font-family: Livvic-SemiBold;
 }
 .faq-section-block 
 {
-  width: 90%;
-  float:right;
   margin-bottom:10px;
 }
 .faq-section-block1 
@@ -510,11 +698,11 @@ div.rupee .dot {
 {
   width:100%;
   text-align: left;
-  background-color: #05afa3;
+  background-color: #27b3bc;
     border-radius: 0px;
-    border: 1px solid #05afa3;
+    border: 1px solid #18b2bb;
     height: 50px;
-    font-family: SourceSansPro-SemiBold;
+    font-family: Livvic-SemiBold;
     font-size: 14px;
 }
 .faq-section-block button:hover ,.faq-section-block1 button:hover
@@ -527,7 +715,7 @@ div.rupee .dot {
 {
   color:#000;
   font-size: 14px;
-  font-family: SourceSansPro-Regular;
+  font-family: Livvic-Regular;
   padding: 8px 10px 9px 14px;
   letter-spacing: 0.5px;
   word-spacing: 4px;
@@ -555,7 +743,7 @@ div.rupee .dot {
 .contact-blocks p 
 {
   font-size: 13px;
-  font-family: SourceSansPro-Regular;
+  font-family: Livvic-Regular;
   margin-bottom: 0px;
 }
 .contact-blocks .contact-icon 
@@ -572,10 +760,11 @@ div.rupee .dot {
 }
 .contact-blocks h4 
 {
-  background-image: linear-gradient(45deg, #05afa3, transparent);
+  background-image: linear-gradient(45deg, #14b1bb, transparent);
   padding: 11px;
-  font-size: 16px;
-  font-family: SourceSansPro-SemiBold;
+  font-size: 13px;
+  font-family: Livvic-SemiBold;
+  color: #fff;
 }
 .contact-form 
 {
@@ -585,7 +774,7 @@ div.rupee .dot {
 {
   font-size: 13px;
   color: #05afa3;
-  font-family: SourceSansPro-SemiBold;
+  font-family: Livvic-SemiBold;
 }
 .contact-form form input  ,.contact-form form textarea
 {    border-radius: 0px;
@@ -612,7 +801,7 @@ div.rupee .dot {
     border-radius: 22px;
     margin-right: 4px;
     color: #000;
-    font-family: SourceSansPro-SemiBold;
+    font-family: Livvic-SemiBold;
     background-color: transparent;
     font-size: 13px;
     margin-top: 4px;
@@ -633,7 +822,7 @@ div.rupee .dot {
 .footer h4 
 {
   color: #fff;
-    font-family: SourceSansPro-SemiBold;
+    font-family: Livvic-SemiBold;
     font-size: 17px;
     margin-left: 9px;
 }
@@ -641,7 +830,7 @@ div.rupee .dot {
 {
   color: #fff;
   font-size: 14px;
-  font-family: SourceSansPro-Regular;
+  font-family: Livvic-Regular;
   letter-spacing: 1px;
   line-height: 22px;
   word-spacing: 2px;
@@ -658,7 +847,7 @@ div.rupee .dot {
 {
   color: #fff;
   font-size: 14px;
-  font-family: SourceSansPro-Regular;
+  font-family: Livvic-Regular;
   text-decoration: none;
 }
 .footer-links .list-group-item 
@@ -695,7 +884,7 @@ div.rupee .dot {
   text-align: center;
   padding: 6px 0px 7px 0px;
   font-size: 12px;
-  font-family: SourceSansPro-Regular;
+  font-family: Livvic-Regular;
   letter-spacing: 2px;
   word-spacing: 6px;
 }
@@ -753,7 +942,7 @@ div.rupee .dot {
   padding-left: 11px;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
-  font-family:SourceSansPro-Regular;
+  font-family:Livvic-Regular;
   margin-bottom: 3px;
   letter-spacing: 0.8px;
   position: relative;
@@ -861,7 +1050,7 @@ div.rupee .dot {
   color: #fff;
   padding-top: 14px;
   padding-left: 18px;
-  font-family:SourceSansPro-SemiBold;
+  font-family:Livvic-SemiBold;
 }
 .update-detail .offer-detail p
 {
@@ -870,7 +1059,7 @@ div.rupee .dot {
   margin-bottom: 3px;
   float: left;
   padding-top: 5px;
-  font-family:SourceSansPro-Regular;
+  font-family:Livvic-Regular;
   line-height: 20px;
 }
 .offer-detail p 
@@ -880,7 +1069,7 @@ div.rupee .dot {
   margin-bottom: 3px;
   float: left;
   padding-top: 5px;
-  font-family: SourceSansPro-Regular;
+  font-family: Livvic-Regular;
   line-height: 20px;
 }
 .offer-detail .claim-offer 
@@ -892,7 +1081,7 @@ div.rupee .dot {
   font-size: 13px;
   margin-top: -14px;
   margin-left: 14px;
-  font-family:SourceSansPro-SemiBold;
+  font-family:Livvic-SemiBold;
 }
 .offer-detail .cross-offer 
 {
@@ -931,14 +1120,14 @@ div.rupee .dot {
 {
   font-size: 15px;
   margin-bottom: 15px;
-  font-family:SourceSansPro-SemiBold;
+  font-family:Livvic-SemiBold;
 }
 .mode1 p 
 {
   font-size: 14px;
   width: 90%;
   margin: 0 auto;
-  font-family:SourceSansPro-Regular;
+  font-family:Livvic-Regular;
 }
 .mode1 button 
 {
@@ -948,7 +1137,7 @@ div.rupee .dot {
   padding: 2px 5px 2px 5px;
   border-radius: 0px;
   margin-top: 15px;
-  font-family:SourceSansPro-SemiBold;
+  font-family:Livvic-SemiBold;
 }
 .mode1 img 
 {
@@ -1057,65 +1246,119 @@ div.rupee .dot {
 .settlement-blocks p 
 {
   font-size: 14px;
-  font-family:SourceSansPro-Regular;
+  font-family:Livvic-Regular;
 }
 .settlement-blocks h3 
 {
   font-size: 34px;
-  font-family:SourceSansPro-SemiBold;
+  font-family:Livvic-SemiBold;
 }
 #footer p 
 {
   margin-top: 30px;
   font-size: 17px;
   color: #000000;
-  font-family: SourceSansPro-Regular;
+  font-family: Livvic-Regular;
 }
 
 /*------------------------------------ Dashboard style end --------------------------------*/
 /*--------------------------------------Media Query ----------------------------------*/
 @media (max-width:992px)
 {
+  .navbar-options Button 
+  {
+    margin-bottom: 8px;
+  }
+  .top-bar nav {
+    height: 59px;
+}
   .process-image img 
   {
     width:100%;
   }
-  .banner 
+  .slider-banner img 
   {
-    height: 450px;
-    background-size: 100%;
+    width: 100%;
   }
-  .banner-content 
-  {
-    width:100%;
-    padding-left:0px;
-    padding-top: 81px;
-  }
-  .banner-content h3 
-  {
-    font-size: 21px;
-    text-transform: capitalize;
-    letter-spacing: 0px;
-    line-height: 30px;
-  }
-  .banner-content p 
-  {
-    font-size: 14px;
-    margin-top: 2px;
-    font-family: SourceSansPro-Light;
-    line-height: 23px;
-  }
-  .banner-content button 
-  {
+  .slider-banner .carousel-caption h3 {
     font-size: 10px;
-    margin-right: 7px;
-    margin-top: 3px;
-  }
-  .banner-image img 
-  {
-    width: 70%;
-    padding-top: 30px;
-  }
+    letter-spacing: 1px;
+    line-height: 15px;
+}
+.slider-banner .carousel-caption p {
+  display:none;
+}
+.slider-banner .carousel-caption {
+  left: 5%;
+  top: 0%;
+  width: 185px;
+}
+.slider-banner .carousel-caption button.api {
+  font-size: 9px;
+  padding: 3px 4px 3px 4px;
+  width: 82px;
+  margin-right: 5px;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+.slider-banner .carousel-caption button.example-1 {
+  padding: 3px 4px 3px 4px;
+  font-size: 9px;
+  font-family: Livvic-SemiBold;
+  width: 118px;
+  margin-top: 20px;
+}
+.slider-banner .carousel-inner {
+  height: 130px !important;
+}
+.slider-banner .carousel-control-prev ,.slider-banner .carousel-control-next ,.slider-banner .carousel-indicators
+{
+  display:none;
+}
+.about-us {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.about-us .about1 {
+  margin-top: 0%;
+  margin-bottom: 24px;
+}
+.about-content h1 {
+  font-size: 18px;
+}
+.about-content {
+  margin-top: 20px;
+}
+.about-content h3 {
+  font-size: 12px;
+}
+.about-content p {
+  font-size: 11px;
+}
+.about-heading h3 ,.faq-heading h3 ,.contact-heading h3{
+  font-size: 16px;
+  padding-bottom: 9px;
+}
+.services .services-images img {
+  margin-top: 20px;
+}
+.transfer-content h3 {
+  font-size: 15px;
+}
+.transfer-content {
+  margin-top: 20px;
+}
+.transfer-content p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.transfer-img
+{
+  text-align: center;
+}
+.transfer-img img {
+  width: 60%;
+}
   .api {
     padding-top: 0px;
     padding-bottom: 10px;
@@ -1212,7 +1455,11 @@ div.rupee .dot {
 }
 .process-steps-content p {
   font-size: 14px;
-  font-family: SourceSansPro-Regular;
+  font-family: Livvic-Regular;
+}
+.faq 
+{
+  background-image: none;
 }
 .faq-heading h3, .contact-us .contact-heading h3 {
   padding-bottom: 10px;
